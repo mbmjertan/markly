@@ -2,15 +2,14 @@
 include 'class.php';
 $obj = new bookmarkly();
 
-// Sets the database conection variables.
-$obj->host = 'localhost'; //change this
-$obj->username = 'root'; //and this
-$obj->password = ''; // this, as well
-$obj->db = 'baka'; // aaaand this
 
-// let's try to make a connection
+$obj->host = 'localhost';
+$obj->username = 'root';
+$obj->password = ''; 
+$obj->db = 'baka';
+
 $obj->connect();
-error_reporting(0); // reporting errors is turned off. minima may produce errors, but we don't want to create huge error log files. if you're not fine with this, you can disable the option and try to fix the bugs causing minima to misbehave.
+error_reporting(0); /
 ?>
  <?php
 	if($_POST['add']):
